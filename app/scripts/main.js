@@ -31,3 +31,10 @@ function renderFollower(person) {
   var li = $(JST.follower(contextObj));
   $('.js-following').append(li);
 }
+
+function change() // no ';' here
+{
+    var elem = document.getElementById('.js-follow');
+    if (elem.value=="button") elem.value = "Open Curtain";
+    else elem.value = "Close Curtain";
+}
